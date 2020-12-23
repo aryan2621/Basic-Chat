@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <script defer src="http://localhost:3000/socket.io/socket.io.js">
+    </script>
+    <script defer src="./script.js"></script>
+</head>
+<style>
+   
+    body{
+        width: 40%;
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+
+    }
+    #message-container{
+        text-align: left;
+    }
+    #send-container{
+        display: flex;
+        flex-direction: row;
+        height: 60px;
+    }
+
+</style>
+
+<body>
+    <div id="message-container"></div>
+    <div id="first"class="mb-3">
+    <form  id="send-container">
+        <input  class="form-control" type="text"class="form-control" id="message-input">
+        <button class="btn btn-success ml-2 mb-3" type="submit">Send</button>
+    </form>
+</div>
+
+</body>
+
+</html>
